@@ -113,3 +113,13 @@ Then access via HTTPS URL above.
 ---
 *Setup completed: February 4, 2026*
 
+ fuser -k 6081/tcp 2>/dev/null; sleep 2; ./utils/novnc_proxy --vnc fictional-space-invention-695wv5xwvwvfwgv-6080.app.github.dev:443 --listen 6081 --cert self.pem
+  3168Using local websockify at /workspaces/noVNC/utils/websockify/run
+Starting webserver and WebSockets proxy on port 6081
+/workspaces/noVNC/utils/websockify/websockify/websocket.py:31: UserWarning: no 'numpy' module, HyBi protocol will be slower
+  warnings.warn("no 'numpy' module, HyBi protocol will be slower")
+WebSocket server settings:
+  - Listen on :6081
+  - Web server. Web root: /workspaces/noVNC
+  - SSL/TLS support
+  - proxying from :6081 to fictional-space-invention-695wv5xwvwvfwgv-6080.app.github
